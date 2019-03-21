@@ -1,0 +1,136 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "org.flowable.rest.app.properties.RestAppProperties",
+      "name": "flowable.rest.app",
+      "type": "org.flowable.rest.app.properties.RestAppProperties"
+    },
+    {
+      "sourceType": "org.flowable.rest.app.properties.RestAppProperties",
+      "name": "flowable.rest.app.admin",
+      "sourceMethod": "getAdmin()",
+      "type": "org.flowable.rest.app.properties.RestAppProperties$Admin"
+    }
+  ],
+  "properties": [
+    {
+      "deprecated": true,
+      "name": "create.demo.definitions",
+      "type": "java.lang.Boolean",
+      "deprecation": {
+        "reason": "Using improved setup for Spring Boot.",
+        "level": "error",
+        "replacement": "flowable.rest.app.create-demo-definitions"
+      }
+    },
+    {
+      "sourceType": "org.flowable.rest.app.properties.RestAppProperties$Admin",
+      "name": "flowable.rest.app.admin.first-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "org.flowable.rest.app.properties.RestAppProperties$Admin",
+      "name": "flowable.rest.app.admin.last-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "org.flowable.rest.app.properties.RestAppProperties$Admin",
+      "name": "flowable.rest.app.admin.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "org.flowable.rest.app.properties.RestAppProperties$Admin",
+      "name": "flowable.rest.app.admin.user-id",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "org.flowable.rest.app.properties.RestAppProperties",
+      "defaultValue": "verify-privilege",
+      "name": "flowable.rest.app.authentication-mode",
+      "description": "Configures the way user credentials are verified when doing a REST API call: 'any-user' : the user needs to exist and the password need to match. Any user is allowed to do the call (this is the pre 6.3.0 behavior) 'verify-privilege' : the user needs to exist, the password needs to match and the user needs to have the 'rest-api' privilege If nothing set, defaults to 'verify-privilege'",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "org.flowable.rest.app.properties.RestAppProperties",
+      "defaultValue": true,
+      "name": "flowable.rest.app.create-demo-definitions",
+      "description": "Deploys demo process definitions that allows to have some example data when using the REST APIs",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "org.flowable.rest.app.properties.RestAppProperties",
+      "defaultValue": "ROLE_",
+      "name": "flowable.rest.app.role-prefix",
+      "description": "The default role prefix that needs to be used by Spring Security.",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "org.flowable.rest.app.properties.RestAppProperties",
+      "defaultValue": true,
+      "name": "flowable.rest.app.swagger-docs-enabled",
+      "description": "Enable\/disable whether the docs are available on \/docs",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "deprecated": true,
+      "name": "rest-admin.firstname",
+      "type": "java.lang.String",
+      "deprecation": {
+        "reason": "Using improved setup for Spring Boot.",
+        "level": "error",
+        "replacement": "flowable.rest.app.admin.first-name"
+      }
+    },
+    {
+      "deprecated": true,
+      "name": "rest-admin.lastname",
+      "type": "java.lang.String",
+      "deprecation": {
+        "reason": "Using improved setup for Spring Boot.",
+        "level": "error",
+        "replacement": "flowable.rest.app.admin.last-name"
+      }
+    },
+    {
+      "deprecated": true,
+      "name": "rest-admin.password",
+      "type": "java.lang.String",
+      "deprecation": {
+        "reason": "Using improved setup for Spring Boot.",
+        "level": "error",
+        "replacement": "flowable.rest.app.admin.password"
+      }
+    },
+    {
+      "deprecated": true,
+      "name": "rest-admin.userid",
+      "type": "java.lang.String",
+      "deprecation": {
+        "reason": "Using improved setup for Spring Boot.",
+        "level": "error",
+        "replacement": "flowable.rest.app.admin.user-id"
+      }
+    },
+    {
+      "deprecated": true,
+      "name": "rest.authentication.mode",
+      "type": "java.lang.String",
+      "deprecation": {
+        "reason": "Using improved setup for Spring Boot.",
+        "level": "error",
+        "replacement": "flowable.rest.app.authentication-mode"
+      }
+    },
+    {
+      "deprecated": true,
+      "name": "rest.docs.swagger.enabled",
+      "type": "java.lang.Boolean",
+      "deprecation": {
+        "reason": "Using improved setup for Spring Boot.",
+        "level": "error",
+        "replacement": "flowable.rest.app.swagger-docs-enabled"
+      }
+    }
+  ]
+}
